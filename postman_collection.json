@@ -1,0 +1,408 @@
+{
+	"info": {
+		"_postman_id": "17711d6b-563a-470b-a52a-65dbf5812e3a",
+		"name": "Task by Aneri",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registrations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Aniket\",\r\n    \"email\":\"aniket@gmail.com\",\r\n    \"password\":\"Sairam@123\",\r\n    \"password2\":\"Sairam@123\",\r\n    \"last_name\":\"Gajjar\",\r\n    \"first_name\":\"Aniket\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/Register/"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Pragnesh\",\r\n    \"password\":\"Sairam@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/Login/"
+			},
+			"response": []
+		},
+		{
+			"name": "User Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token a8b03c9185c95298582798493db3c7625e767824",
+						"type": "default"
+					}
+				],
+				"url": "http://127.0.0.1:8000/users/Detail/"
+			},
+			"response": []
+		},
+		{
+			"name": "User Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token a8b03c9185c95298582798493db3c7625e767824",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Pragnesh\",\r\n    \"email\":\"pragnesh@gmail.com\",\r\n    \"last_name\":\"Raval\",\r\n    \"first_name\":\"Parth\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/Detail/"
+			},
+			"response": []
+		},
+		{
+			"name": "User Partial Update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token a8b03c9185c95298582798493db3c7625e767824",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"Pragnesh\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/Detail/"
+			},
+			"response": []
+		},
+		{
+			"name": "User Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token a8b03c9185c95298582798493db3c7625e767824",
+						"type": "default"
+					}
+				],
+				"url": "http://127.0.0.1:8000/users/Detail/"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 51d7637a8255e77c6a9c59c5a67aaa18c001f13e",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Petrol, Diesel prices sees a slight rise in Bhubaneswar, Check the new rates Sample\",\r\n    \"body\": \"Bhubaneswar: The prices of petrol and diesel have increased in Bhubaneswar on February 26, 2023. On Sunday, the price of petrol has been recorded at Rs 103.19 per litre, while diesel cost is recorded at Rs 94.76 per litre.The prices of petrol in Cuttack have slightly decreased whereas diesel prices have increased. Petrol has been priced at Rs 103.22 per litre and diesel has been recorded at Rs 95.10 per litre.The petrol prices of the major cities of India have been recorded at Rs. 96.72 per litre in Delhi, Rs. 106.03 per litre in Kolkata. While Mumbai and Chennai has recorded petrol rate at Rs. 106.31 per litre and Rs. 102.63 per litre.The diesel prices in the major cities of India have been recorded as follows: Rs. 89.62 per litre in Delhi, Rs. 92.76 per litre in Kolkata, Rs. 94.27 per litre in Mumbai, and Rs. 94.24 per litre in Chennai.\",\r\n    \"public\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/posts/post/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 51d7637a8255e77c6a9c59c5a67aaa18c001f13e",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Petrol, Diesel prices sees a slight rise in Bhubaneswar, Check the new rates Sample\",\r\n    \"body\": \"Bhubaneswar: The prices of petrol and diesel have increased in Bhubaneswar on February 26, 2023. On Sunday, the price of petrol has been recorded at Rs 103.19 per litre, while diesel cost is recorded at Rs 94.76 per litre.The prices of petrol in Cuttack have slightly decreased whereas diesel prices have increased. Petrol has been priced at Rs 103.22 per litre and diesel has been recorded at Rs 95.10 per litre.The petrol prices of the major cities of India have been recorded at Rs. 96.72 per litre in Delhi, Rs. 106.03 per litre in Kolkata. While Mumbai and Chennai has recorded petrol rate at Rs. 106.31 per litre and Rs. 102.63 per litre.The diesel prices in the major cities of India have been recorded as follows: Rs. 89.62 per litre in Delhi, Rs. 92.76 per litre in Kolkata, Rs. 94.27 per litre in Mumbai, and Rs. 94.24 per litre in Chennai.\",\r\n    \"public\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/posts/post/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 51d7637a8255e77c6a9c59c5a67aaa18c001f13e",
+						"type": "default"
+					}
+				],
+				"url": "http://127.0.0.1:8000/posts/post/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Partial Update Post",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 51d7637a8255e77c6a9c59c5a67aaa18c001f13e",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"public\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/posts/post/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Post By User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 51d7637a8255e77c6a9c59c5a67aaa18c001f13e",
+						"type": "default"
+					}
+				],
+				"url": "http://127.0.0.1:8000/posts/post/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Specified Post By id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token a8b03c9185c95298582798493db3c7625e767824",
+						"type": "default"
+					}
+				],
+				"url": "http://127.0.0.1:8000/posts/post/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Public Posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 51d7637a8255e77c6a9c59c5a67aaa18c001f13e",
+						"type": "default"
+					}
+				],
+				"url": "http://127.0.0.1:8000/posts/PublicPost/"
+			},
+			"response": []
+		},
+		{
+			"name": "Like Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 51d7637a8255e77c6a9c59c5a67aaa18c001f13e",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"likes\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/like/?post_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"like",
+						""
+					],
+					"query": [
+						{
+							"key": "post_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Like By Post Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 51d7637a8255e77c6a9c59c5a67aaa18c001f13e",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/like/?post_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"like",
+						""
+					],
+					"query": [
+						{
+							"key": "post_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Like By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 51d7637a8255e77c6a9c59c5a67aaa18c001f13e",
+						"type": "default"
+					}
+				],
+				"url": "http://127.0.0.1:8000/like/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Like",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 51d7637a8255e77c6a9c59c5a67aaa18c001f13e",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"likes\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/like/1?post_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"like",
+						"1"
+					],
+					"query": [
+						{
+							"key": "post_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Like / Unlike",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 51d7637a8255e77c6a9c59c5a67aaa18c001f13e",
+						"type": "default"
+					}
+				],
+				"url": "http://127.0.0.1:8000/like/1"
+			},
+			"response": []
+		}
+	]
+}
